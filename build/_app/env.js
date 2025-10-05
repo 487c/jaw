@@ -1,1 +1,1 @@
-export const env={"PUBLIC_PATH":""}
+export const env={}

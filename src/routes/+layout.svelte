@@ -8,7 +8,6 @@
   import { Button } from "$lib/components/ui/button/index.js";
   import * as NavigationMenu from "$lib/components/ui/navigation-menu/index.js";
   import { navigationMenuTriggerStyle } from "$lib/components/ui/navigation-menu/navigation-menu-trigger.svelte";
-  import { env } from "$env/dynamic/private";
   import SunIcon from "@lucide/svelte/icons/sun";
   import MoonIcon from "@lucide/svelte/icons/moon";
   import Github from "@lucide/svelte/icons/github";
@@ -34,7 +33,7 @@
         <header class="mb-10 flex flex-grow flex-wrap justify-between">
           <a
             class="mt-5 flex content-center-safe font-bold tracking-wide underline decoration-foreground"
-            href="j//aw/"
+            href="/"
           >
             <img class="mr-1 h-5 w-5" src={favicon} alt="" />
             just another website</a
@@ -45,14 +44,14 @@
                 <NavigationMenu.Item>
                   <NavigationMenu.Link>
                     {#snippet child()}
-                      <a href="." class={navigationMenuTriggerStyle()}>Home</a>
+                      <a href="/" class={navigationMenuTriggerStyle()}>Home</a>
                     {/snippet}
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
                 <NavigationMenu.Item>
                   <NavigationMenu.Link>
                     {#snippet child()}
-                      <a href="blog" class={navigationMenuTriggerStyle()}
+                      <a href="/blog" class={navigationMenuTriggerStyle()}
                         >Blog</a
                       >
                     {/snippet}
@@ -61,7 +60,7 @@
                 <NavigationMenu.Item>
                   <NavigationMenu.Link>
                     {#snippet child()}
-                      <a href="about" class={navigationMenuTriggerStyle()}
+                      <a href="/about" class={navigationMenuTriggerStyle()}
                         >About</a
                       >
                     {/snippet}
