@@ -32,10 +32,10 @@
       <div class="z-50">
         <header class="mb-10 flex flex-grow flex-wrap justify-between">
           <a
-            class="mt-5 flex content-center-safe font-bold tracking-wide underline decoration-foreground"
+            class="mt-5 flex content-center-safe font-bold tracking-wide underline decoration-foreground text-2xl"
             href="/"
           >
-            <img class="mr-1 h-5 w-5" src={favicon} alt="" />
+            <img class="mr-1 h-7 w-10" src={favicon} alt="" />
             just another website</a
           >
           <div class="mt-5 flex rounded-md border">
@@ -82,8 +82,8 @@
           </div>
         </header>
       </div>
-      <main class="mb-auto md:mx-10">
-        <div class="size-full">
+      <main class="mb-auto md:mx-10 flex justify-center">
+        <div class="size-full max-w-4xl">
           {@render children?.()}
         </div>
       </main>
