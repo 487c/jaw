@@ -47,6 +47,7 @@
 	"dependencies": {
 		"@sveltejs/adapter-static": "^3.0.9",
 		"add": "^2.0.6",
+		"dotenv": "^17.2.3",
 		"mdx-mermaid": "^2.0.3",
 		"mermaid": "^11.12.0",
 		"mode-watcher": "^1.1.0",
