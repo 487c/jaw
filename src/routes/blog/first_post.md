@@ -2,7 +2,7 @@
 title: first
 subtitle: What is this all about
 date: '2025-09-24'
-read_time: 5.3
+read_time: 2
 layout: blog
 tags: [blog]
 tldr: 'first blogpost, experiment with unknown future'
@@ -11,7 +11,6 @@ tldr: 'first blogpost, experiment with unknown future'
 # Content
 
 # Why do we need just another website?
-In short, **we** dont, but **I** do.
 
 Currently I am on parentleave I i have surprisingly some hours of freetime and want to do some 'IT' stuff.
 About two years ago i had the idea to do something with svelte and sveltekid seems to be a good framework to generate static blog websites.

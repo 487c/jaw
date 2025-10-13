@@ -109,6 +109,12 @@
       padding-left: 2rem;
     }
 
+    ul {
+      li:before {
+        content: "-";
+      }
+    }
+
     li {
       margin-bottom: 0.5rem;
     }
@@ -159,6 +165,11 @@
       border: 0;
       border-top: 1px solid #ddd;
       margin: 2rem 0;
+    }
+    img {
+      display: block;
+      margin: 2rem auto;
+      max-width: 400px;
     }
   }
 </style>
