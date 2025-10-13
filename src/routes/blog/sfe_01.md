@@ -1,33 +1,32 @@
 ---
-title: Secure File Exchange
-subtitle: Project for a USB File Exchange Software in Rust
+title: Secure File Exchange Project
+subtitle: Projectidea for a USB File Exchange Software in Rust
 date: '2025-10-10'
-read_time: 5.3
+read_time: 5
 layout: blog
-tags: [rust, design]
-project: sef
-tldr: 'new rust project for offering/requesting/exchanging encrypted files via usb'
+tags: [rust, ideas, sef]
+tldr: new rust project for offering/requesting/exchanging encrypted files via usb
 ---
 
 # Content
 
 # Context
 
-Once upon a time, I was waiting for the train together with my study mate.
-As we were waiting for the exceedingly late train (thanks DB) we discussed
+Once upon a time, together with my study mate I was waiting for the train.
+As we were waiting in the cold for the exceedingly late train (thanks DB) we discussed
 how to share our latest notes from the recent lecture securely.
 As we both have a lot of notes we pictured to have
 the possibility to choose which notes to exchange,
 as the notes altogether were to much to transfer at once.
 Various ideas utilizing VPN came up, but nothing stood out.
 
-Today I am looking for a new (fun) project to torture myself with, preferably with a new programming language. Since I watched 'ThePrimeagen' the words 'skill issue' in combination with 'rust' are stuck in my head. Rust has so many features that writing code can get complicated fast (in my opinion)...
+Today I am looking for a new (fun) project to torture myself with, preferably with a new programming language. Once I watched 'ThePrimeagen' and the words 'skill issue' in combination with 'rust' are stuck in my head. I tried it once and it was quite frustrating, but I have not given up so there tool of torture...
 
 # To consider
 
-After some brainstorming and consideration of things I want to try in Rust, here is a rough outline of things I want to consider:
+After some brainstorming and consideration of things I want to try in Rust, are some keynotes:
 
-- **Avoidance of the internetz**:
+- **Avoidance of the internetz and working with the filesystem**:
 There is no need to transfer the file via the webs, as the transfer speed via USB is faster and direct access to the files is not needed
 - **encryption, encryption, encryption**:
 The words 'secure' and 'encryption' go well together
@@ -45,14 +44,14 @@ Selection of the USB Device, the keyfile for opening the vault and maybe another
 It is yet unclear to me:
 - Is encryption stacking even useful
 - Which encryption algorithm/type to be used
-- Considerations of initialising a vault
+- Considerations of initialising a usb key, aka the vault
 
 After the vault is opened the following dialog should open (in case the keys are correct)
 
 ![Main Dialog](./imgs/sef_ui_main.jpg "Application Main Dialog")
 
 The main Dialog should revolve around the decrypted indexing file, which is basicly a list of all files that are of interest for exchanging.
-The application should allow adding entries to the list, request files in the list from the other party and copying files from and to the store.
+The application should allow adding/removing entries on the list, requesting files from the other party and copying files from and to the vault.
 
 Basicly the use case would be:
 ```mermaid

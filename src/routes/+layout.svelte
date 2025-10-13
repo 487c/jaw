@@ -17,11 +17,17 @@
 </script>
 
 <svelte:head>
+  <title>just another Website: Home</title>
+  <meta
+    name="description"
+    content="Blog website and collection of fleetin thoughts"
+  />
   <link rel="icon" href={favicon} />
   <link
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
     rel="stylesheet"
   />
+  <meta name="author" content="Christian Hennings" />
 </svelte:head>
 <ModeWatcher />
 

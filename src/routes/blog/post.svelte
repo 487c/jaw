@@ -3,7 +3,14 @@
   export let date;
   export let subtitle;
   export let tldr;
+  export let tags;
 </script>
+
+<svelte:head>
+  <title>{title}</title>
+  <meta name="description" content={subtitle} />
+  <meta name="keywords" content={tags.join(", ")} />
+</svelte:head>
 
 <div class="flex justify-center">
   <div
